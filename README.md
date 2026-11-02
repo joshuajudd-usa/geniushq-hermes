@@ -75,7 +75,7 @@ There are no skills, plugins, scheduled jobs or keys in the pack. Read the files
 
 If your terminal can't find `geniushq`, use `hermes -p geniushq` in its place, for example `hermes -p geniushq model`.
 
-**Running Big Head too?** Give each its own Discord bot and token. Hermes refuses to start a second profile on a token another profile already uses.
+**Running Big Head too?** Give each its own Discord bot and token. On one computer, Hermes refuses to start a second profile on a token another profile already uses. If both bots are in the same server, add `thread_require_mention: true` under `discord:` in both profiles' `config.yaml`, so each answers only when it's mentioned.
 
 ## Keep it safe
 

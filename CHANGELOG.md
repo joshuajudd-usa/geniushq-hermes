@@ -4,7 +4,7 @@
 
 The first Genius pack.
 
-- **`SOUL.md`:** GeniusHQ's persona (personality, product knowledge, Discord manners and running on your own Hermes Agent). It shares Agent Big Head's rules for safety, truth and consent, word for word. SHA-256 `01df139249291cc1adaeb3b63d7b11469a3d4a47a99d5b5aa09ac664b166bfbc`.
+- **`SOUL.md`:** GeniusHQ's persona (personality, product knowledge, Discord manners and running on your own Hermes Agent). Its priorities and its truth and consent rules are Agent Big Head's, word for word. SHA-256 `1c7b0eecfb06745558a4783169dc7e561ce21ae42461a4ca359d1e1fa5e59290`.
 - **`config.yaml`:** the same settings as the Agent Big Head pack 0.1.0:
   - In Discord its tools are limited to web, vision, clarify, memory, to-do and past-chat search.
   - It uses its tools for at most 30 rounds per message, then wraps up with a reply.
