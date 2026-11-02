@@ -48,7 +48,7 @@ There are no skills, plugins, scheduled jobs or keys in the pack. Read the files
    2. Open **Bot**, select **Reset Token** and copy the token. It's shown once.
    3. On the same page, turn on **Message Content Intent** and **Server Members Intent**.
    4. Turn **Public Bot** off, so only you can add it to servers.
-5. **Pick a compass.** Download one of the five pictures in [`avatars/`](avatars/AVATARS.md) and upload it as the bot's icon on the **Bot** page. You can use it as the **App Icon** under **General Information** too. Upload it as it is; Discord crops it to a circle.
+5. **Pick a compass.** Take one of the five pictures in [`avatars/`](avatars/AVATARS.md). They're also in the `avatars` folder of the profile step 2 made, which `geniushq profile` shows. Upload it as the bot's icon on the **Bot** page. You can use it as the **App Icon** under **General Information** too. Upload it as it is; Discord crops it to a circle.
 6. **Connect Discord:**
 
    ```
