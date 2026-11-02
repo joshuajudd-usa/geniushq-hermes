@@ -1,0 +1,13 @@
+name: geniushq
+version: 0.1.0
+description: "GeniusHQ by IDuh Genius, from the Genius pack: a composed, precise AI agent for your own Discord, running on your own Hermes Agent."
+hermes_requires: ">=0.22.5"
+author: "IDuh Genius"
+license: "LicenseRef-Genius-Pack (see LICENSE)"
+env_requires:
+  - name: DISCORD_BOT_TOKEN
+    description: "Your own Discord bot's token, from the Discord Developer Portal. Treat it like a password."
+    required: true
+  - name: DISCORD_ALLOWED_USERS
+    description: "Your own Discord user ID. GeniusHQ ignores everyone else. Anyone you add can use every tool it has."
+    required: true

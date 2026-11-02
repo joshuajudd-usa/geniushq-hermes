@@ -1,0 +1,71 @@
+# Genius pack (GeniusHQ) defaults, v0.1.0.
+# You choose its model: run `geniushq model`.
+# `hermes profile update geniushq` keeps your copy of this file unless you add --force-config,
+# so safety changes in a new release arrive only if you take them (the changelog says when).
+
+# In Discord GeniusHQ gets only these tools: web search, reading images, asking you a question,
+# memory, a to-do list and searching its past chats. No terminal, files, code, browser,
+# subagents or scheduled jobs. Add more with `geniushq tools`, and read the README first.
+platform_toolsets:
+  discord: [web, vision, clarify, memory, todo, session_search]
+
+agent:
+  max_turns: 30                # at most 30 rounds of tool use per message, then it wraps up. Not a spending limit
+
+approvals:
+  mode: manual                 # prompt for every command Hermes flags as risky (its own default is smart)
+  timeout: 300
+  cron_mode: deny
+  single_query_mode: deny
+  unattended_mode: deny
+  mcp_reload_confirm: true
+  destructive_slash_confirm: true
+  deny:                        # refused even if approvals are off. A seatbelt, not a sandbox.
+    - "sudo *"
+    - "doas *"
+    - "pkexec *"
+    - "git*push*--force*"
+    - "git*push* -f*"
+    - "git*push*+*"
+    - "*curl*| sh"
+    - "*curl*| sh *"
+    - "*curl*|sh"
+    - "*curl*| bash"
+    - "*curl*| bash *"
+    - "*curl*|bash"
+    - "*wget*| sh"
+    - "*wget*| sh *"
+    - "*wget*| bash"
+    - "*wget*| bash *"
+    - "*<(curl*"
+    - "*$(curl*"
+    - "dd *of=/dev/*disk*"
+    - "security dump-keychain*"
+    - "*security find-*-password*"
+    - "*/.env*"
+    - "*.ssh/id_*"
+
+terminal:
+  backend: local               # runs on this computer. For a sealed sandbox, use Hermes's Docker backend.
+  timeout: 180
+
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  write_approval: false        # it saves without asking. Its own rules (SOUL.md) have it ask before deleting or spending
+  nudge_interval: 0            # no automatic background memory reviews (they would spend money in the background)
+
+unauthorized_dm_behavior: ignore   # strangers who DM it get no reply
+
+group_sessions_per_user: true
+
+discord:
+  require_mention: true        # in servers it answers when @mentioned, then keeps answering in the thread it opens (see auto_thread); add thread_require_mention: true to ask for a mention every time
+  auto_thread: true
+  reactions: true
+  history_backfill: false      # it doesn't read earlier channel messages unless you turn this on
+  allow_mentions:
+    everyone: false
+    roles: false
+    users: true
+    replied_user: true

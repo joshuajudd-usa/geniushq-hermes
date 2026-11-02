@@ -1,0 +1,15 @@
+# Secrets and personal state never ship. Hermes's installer also strips these.
+.env
+.env.*
+!.env.EXAMPLE
+auth.json
+memories/
+sessions/
+state.db*
+logs/
+workspace/
+plans/
+home/
+*_cache/
+local/
+.DS_Store
