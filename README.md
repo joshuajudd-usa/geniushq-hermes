@@ -14,7 +14,7 @@ Would you rather have Big Head's wisecracks? Use the [Agent Big Head pack](https
   - It uses its tools for at most 30 rounds per message, then wraps up with a reply. That keeps one message from running on and on, but it isn't a spending limit.
   - It saves to memory without asking, and asks before deleting or spending.
   - It ignores strangers. In a server it answers when you @mention it, then keeps answering in the thread it opens.
-- **[`avatars/`](avatars/AVATARS.md)**: five Solar Compass pictures (World, Brilliantist, Diabolicist, Conspiricist and Mastermind). Pick one for your bot. The picture changes nothing about how GeniusHQ behaves.
+- **[`avatars/`](avatars/AVATARS.md)**: five Solar Compass pictures (World, Brilliantist, Diabolicist, Mastermind and Conspiricist). Pick one for your bot. The picture changes nothing about how GeniusHQ behaves.
 
 There are no skills, plugins, scheduled jobs or keys in the pack. Read the files before you install, if you like.
 
