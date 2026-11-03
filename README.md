@@ -77,6 +77,11 @@ If your terminal can't find `geniushq`, use `hermes -p geniushq` in its place, f
 
 **Running Big Head too?** Give GeniusHQ and Big Head separate Discord bots, each with its own token. On one computer, Hermes refuses to start a second profile on a token another profile already uses. If both bots are in the same server, add `thread_require_mention: true` under `discord:` in both profiles' `config.yaml`, so each answers only when it's mentioned.
 
+**Discord not your thing?** Hermes Agent can also reach you over iMessage, through a separate service called Photon. This pack is set up for Discord, so you'd connect iMessage yourself, following Hermes's [Photon guide](https://hermes-agent.nousresearch.com/docs/user-guide/messaging/photon) with `geniushq` in place of `hermes`. Before you start GeniusHQ there, do two things:
+
+- **Limit their tools.** The pack's limits cover Discord only, so on iMessage GeniusHQ would get every Hermes tool, terminal and files included. Add `photon: [web, vision, clarify, memory, todo, session_search]` under `platform_toolsets:` in their profile's `config.yaml`.
+- **Allow only your own number.** Your messages then go through Photon as well.
+
 ## Stay safe
 
 - **Allow only yourself.** Everyone on GeniusHQ's allowed list can use every tool they have, and Hermes's docs don't say who may press an approval button, so assume anyone on the list can.
