@@ -9,5 +9,5 @@ env_requires:
     description: "Your own Discord bot's token, from the Discord Developer Portal. Treat it like a password."
     required: true
   - name: DISCORD_ALLOWED_USERS
-    description: "Your own Discord user ID. GeniusHQ ignores everyone else. Anyone you add can use every tool it has."
+    description: "Your own Discord user ID. GeniusHQ ignores everyone else. Anyone you add can use every tool GeniusHQ has."
     required: true

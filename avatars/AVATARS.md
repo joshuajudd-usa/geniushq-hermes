@@ -1,6 +1,6 @@
 # GeniusHQ's five pictures
 
-Pick one of these five Solar Compasses as your GeniusHQ bot's picture in Discord. The picture is only a picture: it doesn't change how GeniusHQ talks, what it can do, what it remembers or which model it runs on.
+Pick one of these five Solar Compasses as your GeniusHQ bot's picture in Discord. The picture is only a picture: it doesn't change how GeniusHQ talks, what they can do, what they remember or which model they run on.
 
 Each one is 768 × 768 PNG artwork on a cream background. Upload it as it is. Discord crops it to a circle.
 
