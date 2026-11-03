@@ -11,4 +11,4 @@ The first Genius pack.
   - Approvals are manual, with a deny list.
   - They save to memory without asking and are told to ask before deleting or spending. There are no background memory reviews.
   - Strangers are ignored, they reply in servers when @mentioned (then keep answering in the thread they open), and they don't read earlier channel history.
-- **`avatars/`:** five Solar Compass pictures to choose from for your bot: World, Brilliantist, Diabolicist, Mastermind and Conspiricist.
+- **`avatars/`:** five Solar Compass pictures to choose from for your bot: World, Brilliantist, Diabolicist, Mastermind and Conspiricist. Each is 1024 × 1024 and sized for Discord, so the whole compass sits inside its circle crop.
