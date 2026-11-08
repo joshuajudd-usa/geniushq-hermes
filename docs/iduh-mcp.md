@@ -20,25 +20,28 @@ They cannot edit, file, dismiss, or delete anything, and he has no tool to send 
 ## Turning it on
 
 1. Use the GeniusHQ client ID below. It is public and has no secret.
-2. Add the server to your `config.yaml`, using the block below (it is commented out in the pack).
+2. In `config.yaml`, set `enabled: true` on the `iduh-genius` server. The block is already there, with the tools turned on for Discord.
 3. Run `/reload-mcp` in Hermes, then sign in when Hermes asks.
 4. Check the consent card: it must list "Read and search your Scatterplot inbox" and, if you want them to add items, "Add notes, links and transcripts". Approve only what you want.
 
+The shipped `config.yaml` already has the block, with `enabled: false`:
+
 ```yaml
-# mcp_servers:
-#   iduh-genius:
-#     url: https://mcp.iduhgenius.com/mcp
-#     auth: oauth
-#     oauth:
-#       client_id: d30c48e0-0622-4376-89f8-24bea1c30503   # public client, no secret
-#       redirect_port: 27891
+mcp_servers:
+  iduh-genius:
+    url: "https://mcp.iduhgenius.com/mcp"
+    enabled: false
+    auth: oauth
+    oauth:
+      client_id: "<client id>"
+      redirect_port: <port>
 ```
 
-Verify these field names against the Hermes MCP reference before you enable it. The block above follows the reference as published at the time of writing; the mirror sites differ.
+The field names match the Hermes MCP reference (`auth`, `oauth.client_id`, `oauth.redirect_port`). Discord gets the server's tools through the `mcp-iduh-genius` toolset in `platform_toolsets`. The Hermes reference doesn't confirm that a server's toolset can be listed this way, so check on first enable: ask in Discord what tools you have, and confirm the IDuh tools appear.
 
 ## Turning it off
 
-Remove the block (or leave it commented out) and run `/reload-mcp`. To revoke the sign-in, open Connected apps on id.iduhgenius.com and disconnect it. That ends every token for ttheir client.
+Set `enabled: false` again and run `/reload-mcp`. To revoke the sign-in, open Connected apps on id.iduhgenius.com and disconnect it. That ends every token for ttheir client.
 
 ## What GeniusHQ can and cannot do through it
 

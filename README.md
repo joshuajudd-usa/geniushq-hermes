@@ -119,3 +119,7 @@ Contact us at [iduhgenius.com/contact](https://iduhgenius.com/contact/) or suppo
 ## License
 
 See [LICENSE](LICENSE).
+
+## Optional: IDuh Genius apps
+
+GeniusHQ can read and add to your Scatterplot inbox through the IDuh Genius MCP server. It is off by default. See [docs/iduh-mcp.md](docs/iduh-mcp.md).
