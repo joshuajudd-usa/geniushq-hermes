@@ -37,7 +37,7 @@ mcp_servers:
       redirect_port: <port>
 ```
 
-The field names match the Hermes MCP reference (`auth`, `oauth.client_id`, `oauth.redirect_port`). Discord gets the server's tools through the `mcp-iduh-genius` toolset in `platform_toolsets`. The Hermes reference doesn't confirm that a server's toolset can be listed this way, so check on first enable: ask in Discord what tools you have, and confirm the IDuh tools appear.
+The field names match the Hermes MCP reference (`auth`, `oauth.client_id`, `oauth.redirect_port`). Discord gets the server's tools through the `mcp-iduh-genius` toolset in `platform_toolsets`. Hermes 0.23 accepts `mcp-iduh-genius` in `platform_toolsets` once the server is defined in `mcp_servers`, which the shipped config does. That checks the config, not the live tools: after you enable the server, ask in Discord what tools you have, and confirm the IDuh tools appear.
 
 ## Turning it off
 
